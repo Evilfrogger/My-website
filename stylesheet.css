@@ -1,0 +1,149 @@
+*{
+    
+    padding: 0px;
+    margin: 0px;
+    font-family: cursive;
+}
+body{
+    background-color: gray;
+    
+}
+/* wapper contains the main background picuter, the logo and the navbar */
+.wapper{
+    background: url(./jpgs/Honeyandbon.jpg) no-repeat;
+    background-size: 100%;
+    height:100vh;
+}
+/* This code makes a grid. 
+.grid{
+    display: grid;
+    grid-template-columns: repeat(10, 10%);
+    grid-template-rows: repeat(10, 10%);
+    grid-column-gap: 1px;
+    grid-row-gap: 1px;
+}
+*/
+/* this is the navagtion bar at the top of the page. */
+.navbar{
+    height: 90px;
+    width: 100%;
+    background: rgba(0,0,0,0.4);
+}
+/*School logo*/
+.logo {
+    position: absolute;
+    width: 70px;
+    height: auto;
+    padding: 20px 50px;
+}
+.navbar ul{
+    float: right;
+    margin-right: 20px;
+    
+
+}
+.navbar ul li{
+    list-style: none;
+    margin: 0 20px;
+    display: inline-block;
+    line-height: 80px;
+    padding: 10px;
+}
+/* Navbar text */
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 6px 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: .8s;
+}
+/* This code makes the navbar text light up red if you are hovering over it. */
+.navbar ul li a.active,
+.navbar ul li a:hover{
+    background: red;
+    border-radius: 2px;
+    
+}
+.content {
+    margin-left: 100px;
+    padding: 20px;
+    display: inline-block;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   
+}
+/* Information boxes */
+.traven,
+.game,
+.dog,
+.contact-information,
+.daily-schedule,
+.feed-back {
+   border: solid 20px;
+   border-style: outset;
+   width: 300px;
+   height: 500px;
+   margin-bottom: 150px;
+   margin-top: 50px;
+   margin-right: 80px;
+   padding: 100px;
+   background-color:grey;
+   color: black;
+}
+/* Images for boxes */
+.traven img,
+.game img,
+.dog img {
+    margin: 10px auto;
+    max-width: 150px;
+    max-height: 500px;
+}
+.traven h2,
+.game h2,
+.dog h2
+.contact-information h2,
+.daily-schedule h2,
+.feed-back h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+    margin-right: 20px
+    
+}
+
+
+
+/* changes screen size based on max-with of px */
+@media only screen and (max-width:1024px ) {
+    .wapper{
+        background: url(./jpgs/Honeyandbon.jpg) no-repeat;
+        background-size: 100%;
+        height:100vh;
+        width: 1024px;
+    }
+    .navbar{
+        height: 180px;
+        width: 1024px;
+        background: rgba(0,0,0,0.4);
+    }
+    .logo{
+        visibility: hidden;
+     }
+    .traven,
+    .game,
+    .dog,
+    .contact-information,
+    .daily-schedule,
+     .feed-back {
+         font-size: 20px;
+         margin-right: 10px;
+         
+}
+
+@media only screen and (max-width:768px ) {
+}
+@media only screen and (max-width:600px) {
+}
+@media only screen and (max-width:480px ) {
+}
+@media only screen and (max-width:300px ) {
+}
